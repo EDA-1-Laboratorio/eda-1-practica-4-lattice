@@ -10,8 +10,8 @@
 #endif
 
 typedef struct {
-    long long ________________; // DEFINE LA VARIABLE APUNTADORA AL SIGUIENTE ELEMENTO
-    int _____________________; // DEFINE LA VARIABLE QUE CONTIENE EL DATO EN CADA ESPACIO DE LA ESTRUCTURA
+    long long *tabla; // DEFINE LA VARIABLE APUNTADORA AL SIGUIENTE ELEMENTO
+    int capacidad; // DEFINE LA VARIABLE QUE CONTIENE EL DATO EN CADA ESPACIO DE LA ESTRUCTURA
 } MemoriaIA;
 
 long long fibonacci_ia(int n, MemoriaIA *m) {
@@ -34,7 +34,7 @@ void imprimir_poco_a_poco(const char *mensaje) {
 }
 
 int main() {
-    int n = ___; // INGRESA LA LLAVE DE LAS INSTRUCCIONES
+    int n = 42; // INGRESA LA LLAVE DE LAS INSTRUCCIONES
     MemoriaIA mem;
 
     mem.capacidad = n + 1;
