@@ -10,8 +10,8 @@
 #endif
 
 typedef struct {
-    long long _____;//DEFINE EL APUNTADOR
-    int _____;//DEFINE EL TIPO DE DATO
+    long long *tabla;//DEFINE EL APUNTADOR
+    int capacidad;//DEFINE EL TIPO DE DATO
 } MemoriaIA;
 
 long long fibonacci_ia(int n, MemoriaIA *m) {
@@ -33,7 +33,7 @@ void descifrar_kernel(int* datos, int shift) {
 }
 
 int main() {
-    int n = ______; //ESCRIBE LA LLAVE AQUI
+    int n = 42; //ESCRIBE LA LLAVE AQUI
     MemoriaIA mem;
     mem.capacidad = n + 1;
     mem.tabla = (long long *)malloc(mem.capacidad * sizeof(long long));
